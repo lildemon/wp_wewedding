@@ -1,0 +1,3 @@
+[submodule "we_source"]
+	path = wwwroot
+	url = https://github.com/mikoshu/WE.git
