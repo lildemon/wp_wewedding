@@ -5,6 +5,8 @@ function we_setup() {
      * Enable support for Post Thumbnails on posts and pages.
      */
     add_theme_support('post-thumbnails');
+    add_theme_support( 'title-tag' );
+
 
     /* Set the image size by cropping the image */
     add_image_size('post-thumbnail', 250, 250, true);
@@ -15,7 +17,7 @@ function we_setup() {
     ));
 
     /* Enable support for Post Formats. */
-    add_theme_support('post-formats', array('aside', 'image', 'video', 'quote', 'link'));
+    //add_theme_support('post-formats', array('aside', 'image', 'video', 'quote', 'link', 'wegoods'));
 
     /* Setup the WordPress core custom background feature. */
     add_theme_support('custom-background', array(
@@ -163,4 +165,62 @@ function remove_class_function( $classes ) {
     unset($classes[$key]);
     return $classes;
 
+}
+
+
+/*
+ * 自定义Post类型
+ */
+
+add_action( 'init', 'we_create_wegoods_type' );
+function we_create_wegoods_type() {
+     $labels = array(
+    'name' => '商品',
+    'singular_name' => 'wegoods',
+    'add_new' => '新增',
+    'add_new_item' => '新增商品',
+    'edit_item' => '编辑商品',
+    'new_item' => '新商品',
+    'view_item' => '查看商品',
+    'search_items' => '搜索商品',
+    'not_found' =>  '没找到商品',
+    'not_found_in_trash' => '回收站里没找到商品',
+    'parent_item_colon' => ''
+  );
+
+  $supports = array('title', 'editor', 'thumbnail', 'comments');
+  $taxonomies = array('category', 'post_tag');
+
+  register_post_type( 'wegoods',
+    array(
+      'labels' => $labels,
+      'public' => true,
+      'supports' => $supports,
+      'taxonomies' => $taxonomies,
+      'has_archive' => true,
+      'hierarchical' => true,
+      'menu_icon' => 'dashicons-cart',
+      'rewrite' => array(
+            'slug' => 'goods',
+            'with_front' => true
+        )
+    )
+  );
+}
+
+/*
+ * 声明 piklist 依赖
+ */
+add_action('init', 'we_piklist_check');
+function we_piklist_check()
+{
+  if(is_admin())
+  {
+   include_once('piklist/class-piklist-checker.php');
+ 
+   if (!piklist_checker::check(__FILE__, 'theme'))
+   {
+     return;
+   }
+  }
 }
