@@ -41,6 +41,7 @@ foreach( $child_categories as $c) :
 			'cat' => $c->term_id,
 			'suppress_filters' => false // ??
 		);
+		$original_posts = $posts;
 		$posts = new WP_Query ( $posts_args );
 		if( $posts->have_posts() ): while( $posts->have_posts() ) : $posts->the_post();
 ?>		
@@ -52,6 +53,7 @@ foreach( $child_categories as $c) :
 	</div>
 <?php
 	endforeach;
+	$posts = $original_posts;
 	wp_reset_postdata();
 ?>
 </div>	
