@@ -1320,11 +1320,18 @@ a {
       text-align: center; }
       .main.help .content table td {
         height: 80px; }
+      .main.help .content table .on {
+        background: #E2C083;
+        color: #fff; }
       .main.help .content table a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
         color: #000;
         font-size: 20px; }
         .main.help .content table a:hover {
-          color: #14A1D8; }
+          background: #E2C083;
+          color: #fff; }
     .main.help .content textarea {
       display: block;
       width: 578px;
@@ -1358,6 +1365,26 @@ a {
       margin-bottom: 30px;
       line-height: 50px;
       font-size: 20px; }
+  .main.help .map-box {
+    margin-bottom: 40px; }
+    .main.help .map-box h3 {
+      display: inline-block;
+      background: #ccc;
+      padding: 8px 16px;
+      margin-bottom: 10px; }
+    .main.help .map-box a {
+      display: inline-block;
+      margin: 10px;
+      color: #000;
+      font-size: 16px; }
+      .main.help .map-box a:hover {
+        color: #c9a564; }
+  .main.help dl {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px; }
+    .main.help dl dd {
+      color: #b5896a; }
 
 .btn-bor {
   font-size: 16px;
