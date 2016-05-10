@@ -18,40 +18,43 @@
 				<li>
 					<a href="/archives/category/cases">经典案例</a>
 					<div class="sub-nav clearfix">
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-						</div>
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-						</div>
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-						</div>
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-						</div>
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-						</div>
-						<div>
-							<h3>唯一系列</h3>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-							<a href="#">爱的就是你</a>
-						</div>
-					</div>
+
+<?php
+$category = get_category_by_slug( 'cases' ); // 经典案例
+$args = array(
+	'type'                     => 'post',
+	'child_of'                 => $category->term_id,
+	'orderby'                  => 'name',
+	'order'                    => 'ASC',
+	'hide_empty'               => FALSE,
+	'hierarchical'             => 1,
+	'taxonomy'                 => 'category',
+);
+$child_categories = get_categories( $args );
+foreach( $child_categories as $c) :
+?>
+	<div>
+		<h3><?php echo $c->name; ?></h3>
+<?php
+		$posts_args = array(
+			'posts_per_page' => 10,   // 推荐列表每个10条
+			'cat' => $c->term_id,
+			'suppress_filters' => false // ??
+		);
+		$posts = new WP_Query ( $posts_args );
+		if( $posts->have_posts() ): while( $posts->have_posts() ) : $posts->the_post();
+?>		
+		<a href="<?php echo get_permalink(); ?>"><?php echo get_the_title() ?></a>
+
+<?php	        
+	    		endwhile; endif;
+?>	 
+	</div>
+<?php
+	endforeach;
+	wp_reset_postdata();
+?>
+</div>	
 				</li>
 				<li>
 					<a href="/archives/category/series">系列产品</a>
