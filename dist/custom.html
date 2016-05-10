@@ -1,3 +1,4 @@
+
 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
 <html lang="en">
 <head>
@@ -72,84 +73,54 @@
 		</div>
 		
 		
-		<div class="main help">
+		<div class="header custom">
+			<div class="h-bg"></div>
+		</div>
+		<div class="main custom">
 			<div class="wrapper">
-				<div class="site">
-					<span>您的位置：</span>
-					<a href="#">首页 </a> &gt;
-					<a href="#">关于唯一 </a>
+				<h3 class="title"></h3>
+				<p>预约到店,尊享中国第一婚戒品牌高级定制服务：we为您提供个性定制、探店体验、保养维护和礼品兑换等服务，选择您需要的服务预约到线下定制中心，即可享受预约尊享服务。</p>
+				
+				<input class="choose-time" id="textymdhms" type="text" placeholder="选择到店时间" value=""  readonly>
+
+				<div class="msg-box">
+					<h3>您的联系信息：</h3>
+					<table>
+						<tr>
+							<td>您的姓名：</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>您的联系手机：</td>
+							<td><input type="text" /></td>
+						</tr>
+						<tr>
+							<td>您的常用邮箱：</td>
+							<td><input type="text" /></td>
+						</tr>
+					</table>
 				</div>
-				<div class="clearfix">
-					<div class="side-bar">
-						<dl>
-							<dd>关于唯一</dd>
-							<dt><a href="#">权威认证</a></dt>
-							<dt><a href="#">商务合作</a></dt>
-							<dt><a href="#">加入我们</a></dt>
-						</dl>
-						<dl>
-							<dd>售后服务</dd>
-							<dt><a href="#">注册协议</a></dt>
-							<dt><a href="#">隐私说明</a></dt>
-							<dt><a href="#">其他售后</a></dt>
-						</dl>
-						<dl>
-							<dd>婚戒学院</dd>
-							<dt><a href="#">求婚指南</a></dt>
-							<dt><a href="#">产品百科</a></dt>
-							<dt><a href="#">钻石保养</a></dt>
-						</dl>
-						<dl>
-							<dd>帮助中心</dd>
-							<dt class="on"><a href="#">投诉建议</a></dt>
-							<dt><a href="#">注册流程</a></dt>
-							<dt><a href="#">网站地图</a></dt>
-							<dt><a href="#">联系我们</a></dt>
-						</dl>
-					</div>
-					<div class="content">
-						<div class="banner">
-							<a href="#" class="btn-bor">了解更多WE的品牌故事</a>
-						</div>
-						<div class="mid-box">
-							<p class="title">投诉建议</p>
-							<p class="sub-title">COMPLIANT AND PROPOSAL</p>
-							<p class="desc">您的建议或投诉将帮助及监督我们改进产品和服务。非常感谢您的支持。</p>
-							<p class="title">投诉类型</p>
-							<table>
-								<tr>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-								</tr>
-								<tr>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-									<td><a href="#">接待类服务</a></td>
-								</tr>
-							</table>
-							<textarea name="" placeholder="请告诉我们您的任何意见和建议" ></textarea>
-							<p class="desc">建议您留下联系方式，以便DR专员为您一对一服务，谢谢！</p>
-							<input type="text" placeholder="请输入您的手机号码" >
-							<input type="text" placeholder="请输入您的常用邮箱" >
-							<a class="submit" href="#">提交</a>
-							<p class="title">联系方式</p>
-							<div class="link-box clearfix">
-								<dl>
-									<dd><img src="images/link_phone.png"></dd>
-									<dt>0591-0000000</dt>
-								</dl>
-								<dl>
-									<dd><img src="images/link_email.png"></dd>
-									<dt>weinlove@welove.com</dt>
-								</dl>
-							</div>
-						</div>
-						
-					</div>
+
+				<div class="msg-box">
+					<h3>您的服务需求：</h3>
+					<p>* 让我们更多的了解您，以便提前为您准备好符合要求的服务</p>
+					<table>
+						<tr>
+							<td><a class="check-box" name="ser" href="javascript:;"></a></td>
+							<td>否，到时再说</td>
+						</tr>
+						<tr>
+							<td><a class="check-box" name="ser" href="javascript:;"></a></td>
+							<td>是，希望为我准备感兴趣的产品或个性服务</td>
+						</tr>
+					</table>
 				</div>
+
+				<div class="msg-box">
+					<h3>备注/说明</h3>
+					<textarea placeholder="请在此处输入您需要的附加信息"></textarea>
+				</div>
+
 			</div>
 		</div>
 		<div class="footer">
@@ -227,5 +198,28 @@
 	</ul>
 </div>
 	</div>
+	<script type="text/javascript" src="js/jedate/jedate.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		jeDate({
+			dateCell:"#textymdhms",  
+			isinitVal:false,
+			isTime:true, 
+			festival: true, //显示节日
+			minDate:"2014-09-19 00:00:00",
+		})
+		jeDate.skin("gray")
+		var $check = $(".check-box")
+		$check.on("click",function(){ // checkbox
+			var $this = $(this),
+				name = $this.attr("name")
+			$(".check-box[name="+name+"]").removeClass("on")
+			$this.addClass("on")
+		})
+
+	})
+		
+
+	</script>
 </body>
 </html>

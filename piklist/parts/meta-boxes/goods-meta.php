@@ -1,6 +1,6 @@
 <?php
 /*
-Title: 商品属性
+Title: 商品展示图片
 Post Type: wegoods
 Priority: high
 */

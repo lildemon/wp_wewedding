@@ -1,9 +1,6 @@
 <?php
-/*
-Template Name: Series Page
-*/
+wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.js', array(), false, true);
 ?>
-
 <?php get_header(); ?>
 
 		<div class="header goods">
@@ -13,8 +10,8 @@ Template Name: Series Page
 			<div class="wrapper">
 				<div class="site">
 					<span>您的位置：</span>
-					<a href="/">WE </a> &gt;
-					<a href="/series">系列产品 </a>
+					<a href="#">WE </a> &gt;
+					<a href="#">系列产品 </a>
 				</div>
 
 				<div class="goods-list-box">
@@ -29,7 +26,12 @@ Template Name: Series Page
 						?>
 						<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-							<li><h1>Have Post!</h1></li>
+							<li>
+								<a href="<?php echo get_permalink(); ?>">
+									<?php the_post_thumbnail(); ?>
+									<span><?php the_title(); ?></span>
+								</a>
+							</li>
 						<?php endwhile; 
 						 wp_reset_postdata();
 						 else : ?>
@@ -168,18 +170,5 @@ Template Name: Series Page
 			</div>
 		</div>
 
-		<script type="text/javascript">
-			!function($) {
-				$(document).ready(function(){
-					var $img = $(".ac-img"),
-						$box = $(".ac-box")
-					$img.on("click",function(e){
-						$(this).next().toggle()
-						.parent().siblings(".goods-list-box")
-						.find(".ac-box").css("display","none");
-						
-					})
-				})
-			}(jQuery)
-		</script>
-<?php get_footer(); ?>		
+		
+<?php get_footer(); ?>

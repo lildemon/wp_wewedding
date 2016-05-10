@@ -1,105 +1,65 @@
 <?php get_header(); ?>
-
-		<div class="header">
-			<div class="h-bg"></div>
-			<p class="txt">一枚钻戒 见证一个浪漫爱情故事 Ring Custom Center</p>
-			<div class="h-bottom">
-				<div class="wrapper clearfix bg-fff">
-					<a href="#">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_story.jpg" />
-					</a>
-					<a href="#">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_team.jpg" />
-					</a>
-					<a href="quality.html">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_quality.jpg" />
-					</a>
-				</div>
-				<ul class="clearfix wrapper">
-					<li>
-						<a href="#">品牌故事&gt;&gt;</a>
-					</li>
-					<li>
-						<a href="#">设计团队&gt;&gt;</a>
-					</li>
-					<li>
-						<a href="quality.html">品质&amp;工艺&gt;&gt;</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="main">
+	<?php get_template_part( 'sections/slogan-header' ); ?>
+		
+	<div class="main">
+		<div class="main artical">
 			<div class="wrapper">
-				<div class="culture ani-show">
-					<h3>品牌文化</h3>
-					<p>上世纪90年代，WE首次提出专属钻戒定制概念。当第一对WE钻戒问世，</p>
-					<p>以其故事性和设计美感的完美结合，彻底颠覆了传统钻戒只追求形式美的束缚。</p>
-					<p>独树一帜的WE，始终专注于提供个性化的定制服务。</p>
-				</div>
+				<?php we_breadcrumb() ?>
 				
-				<div class="unique clearfix ani-show">
-					<div class="un-l">
-						<p class="title"></p>
-						<p class="stand"></p>
-					</div>
-					<div class="un-r">
-						<p class="t1">唯一定制</p>
-						<p class="t2">国内戒指定制领航者</p>
-					</div>
-				</div>
+				<div class="ar-content clearfix">
+					<div class="ar-box">
+						<?php 
+						
+						if ( have_posts() ) :
+					
+							while ( have_posts() ) : the_post();
+						?>
+							<h3><?php the_title(); ?></h3>
+							<span><?php the_time(); ?></span>
+							<div class="user-content">
+								<?php the_content(); ?>
+							</div>
+						<?php
+								
+								// original way, use content based on post format
+								//get_template_part( 'content', get_post_format() );
 
-				<div class="light clearfix ani-show">
-					<div class="li-l">
-						<p>
-							WE作为开放式的钻戒定制平台，最大的特色是让每一对爱侣都能参与到钻戒的设计中。WE释放最大的选择空间，您可以根据个人经历回忆、审美喜好、预算标准定制独一无二的钻石戒指。
-						</p>
-						<p class="square"></p>
+							endwhile;
+							
+							//we_paging_nav();
+							
+						else :
+						
+							get_template_part( 'content', 'none' );
+							
+						endif; 
+						
+						?>
+						
 					</div>
-					<ul class="li-r clearfix">
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img1.jpg" /></li>
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img2.jpg" /></li>
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img3.jpg" /></li>
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img4.jpg" /></li>
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img5.jpg" /></li>
-						<li><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/light_img6.jpg" /></li>
-					</ul>
-				</div>
-
-				<div class="standards clearfix ani-show">
-					<div class="st-l">
-						<img class="ring" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/ring.png" >
-					</div>
-					<div class="st-r">
-						<p>
-							WE严格遵守国际权威的4C钻石挑选标准，在此基础上探索出更苛刻的5C审核机制和TIPS原则。对品质的严格把关以及对细节一丝不苟的态度，是WE始终不变的追求。
-						</p>
-						<a href="#">了解更多WE的品质标准</a>
-					</div>
-				</div>
-
-				<div class="intro ani-show">
-					<p>WE钻戒，是一个个故事的讲述者。</p>
-					<p>将日期、姓名、承诺、定情信物、共同经历，渗透进恋人们相遇、相知、相爱的点点滴滴。</p>
-					<p>WE的国际设计师团队将爱情记忆融入钻戒设计，使每一对钻戒都成为世间独一无二的爱情证据。</p>
-					<p>见证“唯一只给唯一爱人”的坚贞守信。</p>
-					<a href="#">了解更多WE的设计工艺</a>
-				</div>
-
-				<div class="photo clearfix ani-show">
-					<div class="ph-l">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/photo_1.jpg">
-					</div>
-					<div class="ph-r">
-						<div class="img1">
-							<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/photo_2.jpg">
+					<div class="fixed-box">
+						<div class="box jd">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/logo.png">
+							<a href="/archives/category/cases">查看经典案例</a>
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/story/img.png">
 						</div>
-						<div class="img2">
-							<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/photo_3.jpg">
+						<div class="box hot">
+							<h3>热点推荐</h3>
+							<div class="link">
+								<a href="#"><span>1.</span>WE福清店盛大开幕</a>
+								<a href="#"><span>2.</span>WE福清店盛大开幕</a>
+								<a href="#"><span>3.</span>WE福清店盛大开幕</a>
+								<a href="#"><span>4.</span>WE福清店盛大开幕</a>
+								<a href="#"><span>5.</span>WE福清店盛大开幕</a>
+							</div>
 						</div>
 					</div>
+					<div class="clear"></div>
 				</div>
-
 			</div>
 		</div>
+		
+
+	</div>
 
 <?php get_footer(); ?>		

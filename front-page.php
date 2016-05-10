@@ -1,33 +1,6 @@
 <?php get_header(); ?>
 
-		<div class="header">
-			<div class="h-bg"></div>
-			<p class="txt">一枚钻戒 见证一个浪漫爱情故事 Ring Custom Center</p>
-			<div class="h-bottom">
-				<div class="wrapper clearfix bg-fff">
-					<a href="#">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_story.jpg" />
-					</a>
-					<a href="#">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_team.jpg" />
-					</a>
-					<a href="quality.html">
-						<img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/img_quality.jpg" />
-					</a>
-				</div>
-				<ul class="clearfix wrapper">
-					<li>
-						<a href="#">品牌故事&gt;&gt;</a>
-					</li>
-					<li>
-						<a href="#">设计团队&gt;&gt;</a>
-					</li>
-					<li>
-						<a href="quality.html">品质&amp;工艺&gt;&gt;</a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		<?php get_template_part( 'sections/slogan-header' ); ?>
 		<div class="main">
 			<div class="wrapper">
 				<div class="culture ani-show">
