@@ -140,16 +140,7 @@ a {
     top: 0;
     width: 100%;
     height: 830px;
-    background: url(../images/top_bg.jpg) center no-repeat;
-    transition: all 8s;
-    -webkit-transition: all 8s;
-    -moz-transition: all 8s;
-    -ms-transition: all 8s; }
-    .header .h-bg:hover {
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      -ms-transform: scale(1.1); }
+    background: url(../images/top_bg.jpg) center no-repeat; }
   .header .txt {
     position: absolute;
     top: 340px;
@@ -202,7 +193,7 @@ a {
   background: rgba(255, 255, 255, 0.9);
   *background: url(../images/nav_bg.png);
   z-index: 999;
-  box-shadow: 0px 2px 4px #eaeaea;
+  box-shadow: 0px 1px 8px #333;
   transition: all 0.8s;
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
@@ -971,9 +962,9 @@ a {
       height: 37px; }
 
 .user-content {
-  border: 1px solid #aeaeae;
-  margin-top: 50px;
-  padding: 15px; }
+  margin-top: 50px; }
+  .user-content img {
+    vertical-align: bottom; }
 
 .guss {
   font-size: 30px;
@@ -1012,7 +1003,7 @@ a {
   overflow: hidden; }
   .about-box div {
     width: 33.33%;
-    height: 300px;
+    height: 255px;
     padding-top: 45px;
     float: left;
     position: relative;
@@ -1293,6 +1284,10 @@ a {
     .main.help .content .mid-box {
       width: 600px;
       margin: 0 auto auto auto; }
+    .main.help .content .w-740 {
+      width: 740px; }
+    .main.help .content .w-800 {
+      width: 800px; }
     .main.help .content .title {
       font-size: 30px;
       line-height: 45px;
@@ -1385,6 +1380,229 @@ a {
     margin-bottom: 30px; }
     .main.help dl dd {
       color: #b5896a; }
+  .main.help .gia p {
+    line-height: 28px; }
+  .main.help .gia .left {
+    float: left; }
+    .main.help .gia .left .title {
+      display: inline-block;
+      *display: inline;
+      margin: 20px 0;
+      width: auto; }
+    .main.help .gia .left h3 {
+      margin-bottom: 60px;
+      font-size: 18px;
+      font-weight: bold; }
+    .main.help .gia .left .con {
+      width: 230px;
+      text-align: justify; }
+  .main.help .gia .right {
+    float: right; }
+  .main.help .gia .title-l {
+    display: inline-block;
+    *display: inline-block;
+    font-size: 30px;
+    line-height: 45px;
+    margin: 50px auto;
+    color: #000;
+    border-bottom: 1px solid #c9a564;
+    width: auto;
+    text-align: center;
+    font-weight: 400; }
+  .main.help .gia .check p {
+    margin-bottom: 40px; }
+  .main.help .gia-bg {
+    position: relative;
+    width: 740px;
+    height: 492px;
+    background: url(../images/sub/giabg.png) center no-repeat; }
+    .main.help .gia-bg p {
+      position: absolute;
+      left: 280px;
+      top: 280px;
+      width: 414px;
+      text-align: justify; }
+  .main.help .cooper {
+    position: relative;
+    height: 743px;
+    background: url(../images/sub/boxbg.jpg) center no-repeat; }
+    .main.help .cooper .message {
+      position: absolute;
+      left: 310px;
+      top: 520px;
+      font-size: 14px; }
+      .main.help .cooper .message p {
+        color: #939393; }
+  .main.help .join-us {
+    padding-bottom: 40px; }
+    .main.help .join-us .join {
+      width: 328px;
+      height: 177px;
+      background: url(../images/sub/join_us.png) center no-repeat;
+      margin: 0 auto auto auto; }
+    .main.help .join-us p {
+      text-align: center;
+      margin: 20px 0;
+      line-height: 30px; }
+    .main.help .join-us .left {
+      text-align: left; }
+    .main.help .join-us .mt {
+      margin: 5px 0; }
+  .main.help .regist {
+    padding-bottom: 40px; }
+    .main.help .regist .title-l {
+      margin-top: 0px; }
+    .main.help .regist h3 {
+      color: #b5896a;
+      margin: 20px 0; }
+    .main.help .regist p {
+      margin: 20px 0; }
+  .main.help .guide {
+    position: relative; }
+    .main.help .guide .ti-bg {
+      position: absolute;
+      left: 100px;
+      width: 226px;
+      height: 113px;
+      background: url(../images/sub/guide_title.png) no-repeat; }
+    .main.help .guide .story-mod {
+      width: 700px;
+      margin: 0 auto; }
+    .main.help .guide .gui-intro {
+      position: relative;
+      margin-left: 170px;
+      padding-top: 80px;
+      width: 500px;
+      line-height: 30px;
+      color: #797979;
+      text-align: justify; }
+    .main.help .guide .gui-story {
+      width: 632px;
+      height: 306px;
+      margin: 20px auto auto auto;
+      background: url(../images/sub/guide_story.png) no-repeat; }
+    .main.help .guide .my-name {
+      float: left;
+      width: 240px;
+      height: 142px;
+      font-weight: bold;
+      position: relative; }
+      .main.help .guide .my-name:after {
+        content: "";
+        position: absolute;
+        left: 83px;
+        top: 56px;
+        width: 1px;
+        height: 70px;
+        background: #000; }
+    .main.help .guide .my-story {
+      float: left;
+      width: 460px;
+      font-size: 16px; }
+      .main.help .guide .my-story p {
+        color: #9c9c9c;
+        text-align: justify; }
+    .main.help .guide .gui-bg {
+      margin-top: 100px;
+      height: 651px;
+      background: url(../images/sub/guid_bg.jpg) center no-repeat; }
+    .main.help .guide .gui-no {
+      width: 730px;
+      height: 395px;
+      background: url(../images/sub/guide_no.png) no-repeat;
+      margin: 100px auto; }
+    .main.help .guide .say-no p {
+      position: relative;
+      width: 540px;
+      margin: 40px auto;
+      padding-left: 40px;
+      color: #000;
+      font-weight: 500; }
+      .main.help .guide .say-no p:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 20px;
+        height: 1px;
+        background: #d1c8b6; }
+  .main.help .enc {
+    padding-bottom: 80px; }
+    .main.help .enc .en-banner {
+      width: 487px;
+      height: 235px;
+      background: url(../images/sub/head_logo.png) no-repeat;
+      margin: 0 auto; }
+    .main.help .enc .in-box {
+      margin-top: 120px;
+      position: relative; }
+      .main.help .enc .in-box .left {
+        float: left; }
+      .main.help .enc .in-box .right {
+        float: right; }
+      .main.help .enc .in-box .en-intro {
+        position: absolute;
+        top: 30px;
+        width: 390px; }
+        .main.help .enc .in-box .en-intro h3 {
+          font-size: 18px; }
+        .main.help .enc .in-box .en-intro .en {
+          font-size: 36px;
+          line-height: 50px;
+          font-weight: bold; }
+        .main.help .enc .in-box .en-intro p {
+          margin-top: 20px;
+          color: #000;
+          font-size: 15px; }
+      .main.help .enc .in-box .ab-l {
+        left: 0px;
+        text-align: left; }
+      .main.help .enc .in-box .ab-r {
+        right: 0px;
+        text-align: right; }
+    .main.help .enc .title {
+      width: 10em; }
+    .main.help .enc .c-5 {
+      width: 570px;
+      margin: 0 auto;
+      text-align: justify; }
+    .main.help .enc .btn-bor {
+      display: block;
+      width: 210px;
+      text-align: center;
+      margin: 40px auto; }
+  .main.help .en-item {
+    width: 570px;
+    padding-left: 34px;
+    position: relative;
+    margin: 60px auto auto auto; }
+    .main.help .en-item:after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #000; }
+  .main.help .dia .dia-banner {
+    width: 294px;
+    height: 159px;
+    margin: 0 auto;
+    background: url(../images/sub/diamond.png) no-repeat; }
+  .main.help .dia .text-mid {
+    margin: 40px auto; }
+  .main.help .dia .c-5 {
+    margin-top: 20px;
+    text-align: center !important; }
+  .main.help .dia .tl {
+    height: 510px;
+    margin-top: 20px;
+    background: url(../images/sub/tl.jpg) center no-repeat; }
+  .main.help .dia .en-item {
+    color: #767676; }
+    .main.help .dia .en-item:after {
+      background: #767676; }
 
 .btn-bor {
   font-size: 16px;
@@ -1398,6 +1616,9 @@ a {
   .btn-bor:hover {
     background: #ab8638;
     color: #fff; }
+
+.text-mid {
+  text-align: center; }
 
 /*商品列表*/
 .goods-list-box ul {
@@ -1796,3 +2017,6 @@ h6 {
   clear: both;
   display: block;
   margin: 0 auto; }
+
+.pdt-200 {
+  padding-top: 200px !important; }

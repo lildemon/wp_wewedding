@@ -13,7 +13,7 @@
 					<a href="/" title="WE婚戒定制中心"></a>
 				</li>
 				<li>
-					<a href="/" class="on">首页</a>
+					<a href="/">首页</a> <!-- class="on"  -->
 				</li>
 				<li>
 					<a href="/archives/category/cases">经典案例</a>

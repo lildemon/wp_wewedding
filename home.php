@@ -61,4 +61,29 @@
 
 	</div>
 
+<script type="text/javascript">
+!function($) {
+	$(document).ready(function(){
+		var $fixed = $(".fixed-box"),  // 右侧热点浮动
+			c_h = window.innerHeight,
+			_top = $fixed.offset().top,
+			cssTop = parseInt($fixed.css("top")),
+			_h = $fixed.height(),
+			h_top = $(".footer").offset().top
+		$(window,document).on("scroll",function(){
+			var top = $(document,window).scrollTop()
+			var height = $(".top-nav").height()
+			if(top > _top-height){
+				$fixed.css("top",cssTop + (top - _top)+height)
+			}else{
+				$fixed.css("top","50px")
+			}
+			if( (top+height+_h) > h_top ){
+				$fixed.css({"top": (h_top - (_h+_top) )})
+			}
+		})
+	})
+}(jQuery)
+
+</script>
 <?php get_footer(); ?>		

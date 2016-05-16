@@ -4,8 +4,8 @@
  */
 ?>
 <?php get_header(); ?>
-<?php get_template_part( 'sections/slogan-header' ); ?>
-<div class="main news-list">
+<?php //get_template_part( 'sections/slogan-header' ); ?>
+<div class="main news-list pdt-200">
 	<div class="wrapper">
 		<div class="site">
 			<span>您的位置：</span>

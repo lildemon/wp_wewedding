@@ -20,9 +20,9 @@ Template Name: 设计团队
 				</div>
 				
 				<ul class="avatar clearfix ani-show">
-					<li><img src="images/design/avatar1.png" alt=""></li>
-					<li><img src="images/design/avatar2.png" alt=""></li>
-					<li><img src="images/design/avatar3.png" alt=""></li>
+					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/avatar1.png" alt=""></li>
+					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/avatar2.png" alt=""></li>
+					<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/avatar3.png" alt=""></li>
 				</ul>
 
 				<div class="classic ani-show">
@@ -32,11 +32,11 @@ Template Name: 设计团队
 						<p>计注入现代审美的活力。</p>
 						<a href="#">DESIGN IDEAR</a>
 					</div>
-					<img src="images/design/classic.jpg" alt="">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/classic.jpg" alt="">
 				</div>
 
 				<div class="designer ani-show">
-					<img class="ani-delay-l" src="images/design/designer1.jpg" alt="">
+					<img class="ani-delay-l" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/designer1.jpg" alt="">
 					<div class="msg-box ani-delay-r">
 						<div>
 							<h3>ANNABELLE  CARL</h3>
@@ -49,7 +49,7 @@ Template Name: 设计团队
 				</div>
 
 				<div class="designer ani-show">
-					<img class="ani-delay-l" src="images/design/designer2.jpg" alt="">
+					<img class="ani-delay-l" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/designer2.jpg" alt="">
 					<div class="msg-box ani-delay-r">
 						<div>
 							<h3>Efva Attling</h3>
@@ -64,7 +64,7 @@ Template Name: 设计团队
 					<h3>饱含文艺情怀的钻戒</h3>
 					<div class="clearfix">
 						<div class="img-box">
-							<img src="images/design/good.jpg" alt="">
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/good.jpg" alt="">
 						</div>
 						<div class="txt-box">
 							<p>设计灵感</p>

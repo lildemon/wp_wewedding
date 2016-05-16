@@ -230,7 +230,7 @@ function we_piklist_check()
  * 面包屑
  */
 function we_breadcrumb() {
-		echo '<div class="site">';
+		echo '<div class="site">您的位置： ';
 	if (!is_home()) {
 		echo '<span><a href="';
 		echo get_option('home');
@@ -285,3 +285,8 @@ if ( ! function_exists( 'post_is_in_descendant_category' ) ) {
         return false;
     }
 }
+
+/*
+ * 可以去除图片间的<br>
+ */
+remove_filter( 'the_content', 'wpautop' );

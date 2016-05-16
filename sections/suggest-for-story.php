@@ -47,7 +47,7 @@ $child_categories = get_categories( $args );
 ?>
 
 		<div class="news">
-			<a class="img-box" href="<?php echo get_permalink(); ?>"><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/story/list_bg_<?php echo $c->slug; ?>.jpg" alt=""></a>
+			<a class="img-box" href="<?php echo get_category_link( $c->term_id ) ?>"><img class="scale" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/story/list_bg_<?php echo $c->slug; ?>.jpg" alt=""></a>
 			<!-- 存放图片规则 list_bg_<分类的slug>.jpg -->
 			<h3>
 				<?php echo $c->name; ?>
