@@ -19,6 +19,6 @@
 		</dl>
 		<p>留下您的需求</p>
 		<p>我们为您提供更多选择</p>
-		<a href="#" class="btn-or">现在预约</a>
+		<a href="/appointment" class="btn-or">现在预约</a>
 	</div>
 </div>

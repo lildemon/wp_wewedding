@@ -1633,7 +1633,8 @@ a {
     display: block;
     text-align: center; }
     .goods-list-box ul a img {
-      width: 330px; }
+      width: 330px;
+      height: 220px; }
     .goods-list-box ul a span {
       display: inline-block;
       font-size: 16px;
@@ -2020,3 +2021,49 @@ h6 {
 
 .pdt-200 {
   padding-top: 200px !important; }
+
+.submit {
+  display: block;
+  width: 240px;
+  height: 53px;
+  background: #bca892;
+  margin: 30px auto auto auto;
+  text-align: center;
+  line-height: 53px;
+  color: #fff;
+  font-size: 24px; }
+  .submit:hover {
+    background: #c9a564; }
+
+.cover {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); }
+  .cover .pop {
+    position: absolute;
+    padding: 40px 40px 20px 40px;
+    width: 500px;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+    .cover .pop .msg {
+      text-align: center;
+      font-size: 22px; }
+    .cover .pop a {
+      display: block;
+      width: 8em;
+      line-height: 40px;
+      margin: 40px auto auto auto;
+      background: #bca892;
+      text-align: center;
+      color: #fff; }
+      .cover .pop a:hover {
+        background: #c9a564; }

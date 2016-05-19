@@ -121,6 +121,8 @@
 					<textarea placeholder="请在此处输入您需要的附加信息"></textarea>
 				</div>
 
+				<a class="submit" id="submit" href="javascript:;">提交</a>
+
 			</div>
 		</div>
 		<div class="footer">
@@ -195,6 +197,12 @@
 	</ul>
 </div>
 	</div>
+	<div class="cover">
+		<div class="pop">
+			<p class="msg">提交成功！请耐心等待工作人员与您联系。</p>
+			<a href="javascript:;" class="close" >关闭</a>
+		</div>
+	</div>
 	<script type="text/javascript" src="js/jedate/jedate.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -212,6 +220,15 @@
 				name = $this.attr("name")
 			$(".check-box[name="+name+"]").removeClass("on")
 			$this.addClass("on")
+		})
+
+		$("#submit").on("click",function(){
+			
+			$(".cover").css("display","block")
+		})
+
+		$(".close").on("click",function(){
+			$(".cover").css("display","none")
 		})
 
 	})
