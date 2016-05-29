@@ -28,7 +28,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -55,7 +55,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -80,7 +80,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -105,7 +105,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -130,7 +130,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -142,7 +142,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 					</ul>
 				</div>
 
-				<div class="goods-list-box">
+				<!-- <div class="goods-list-box">
 					<img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/goods_list/banner_6.jpg" alt="">
 					<ul class="clearfix ac-box">
 						<?php 
@@ -152,10 +152,10 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 							));
 						?>
 						<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
+				
 							<li>
 								<a href="<?php echo get_permalink(); ?>">
-									<?php the_post_thumbnail(); ?>
+									<?php the_post_thumbnail('full'); ?>
 									<span><?php the_title(); ?></span>
 								</a>
 							</li>
@@ -165,7 +165,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 						 <p>此系列暂无商品</p>
 						 <?php endif; ?>
 					</ul>
-				</div>
+				</div> -->
 
 			</div>
 		</div>

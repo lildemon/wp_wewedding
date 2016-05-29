@@ -152,7 +152,36 @@
 
 			<h3 class="guss">猜你喜欢</h3>
 
-			<div class="border clearfix guss-box">
+
+			<?php
+				$cats = wp_get_post_categories($post->ID);
+			if ($cats) {
+				$cat = get_category( $cats[0] );
+				$first_cat = $cat->category_parent;
+				$args = array(
+					'category__in' => array($first_cat),
+					'post__not_in' => array($post->ID),
+					'showposts' => 3,
+					'post_type' => 'wegoods',
+					'orderby' => 'rand',
+					'ignore_sticky_posts' => true);
+
+				query_posts($args);
+				
+			if (have_posts()) : ?>
+				<div class="border clearfix guss-box">
+				<?php while (have_posts()) : the_post(); update_post_caches($posts); ?>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();
+					?>">
+						<?php the_post_thumbnail('full'); ?>
+					</a>
+				<?php endwhile; ?>
+				</div>
+				<?php else : ?>
+					<li>* 暂无相关文章</li>
+			<?php endif; wp_reset_query(); } ?>
+
+			<!-- <div class="border clearfix guss-box">
 				<a href="#">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/goods/goods1.jpg" alt="">
 				</a>
@@ -162,7 +191,7 @@
 				<a href="#">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/pic/goods/goods1.jpg" alt="">
 				</a>
-			</div>
+			</div> -->
 
 			<?php get_template_part( 'sections/goods-contact' ); ?>
 

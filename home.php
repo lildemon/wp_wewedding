@@ -9,10 +9,11 @@
 				<div class="ar-content clearfix">
 					<div class="ar-box">
 						<?php 
-						
+						$post_id = 0;
 						if ( have_posts() ) :
 					
 							while ( have_posts() ) : the_post();
+							$post_id = $post->ID;
 						?>
 							<h3><?php the_title(); ?></h3>
 							<span><?php the_time(); ?></span>
@@ -46,11 +47,35 @@
 						<div class="box hot">
 							<h3>热点推荐</h3>
 							<div class="link">
+								<?php
+									$cats = wp_get_post_categories($post->ID);
+								if ($cats) {
+									$cat = get_category( $cats[0] );
+									$first_cat = $cat->category_parent;
+									$args = array(
+										'category__in' => array($first_cat),
+										'post__not_in' => array($post->ID),
+										'showposts' => 6,
+										'orderby' => 'rand',
+										'ignore_sticky_posts' => true);
+
+									query_posts($args);
+									$sug_idx = 1;
+									
+								if (have_posts()) : ?>
+									<div class="border clearfix guss-box">
+									<?php while (have_posts()) : the_post(); update_post_caches($posts); ?>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();
+										?>">
+											<?php echo $sug_idx; ?>、<?php the_title(); ?>
+										</a>
+										<?php $sug_idx++; ?>
+									<?php endwhile; ?>
+									</div>
+									<?php else : ?>
+										<a href="#">* 暂无相关文章</a>
+								<?php endif; wp_reset_query(); } ?>
 								<a href="#"><span>1.</span>WE福清店盛大开幕</a>
-								<a href="#"><span>2.</span>WE福清店盛大开幕</a>
-								<a href="#"><span>3.</span>WE福清店盛大开幕</a>
-								<a href="#"><span>4.</span>WE福清店盛大开幕</a>
-								<a href="#"><span>5.</span>WE福清店盛大开幕</a>
 							</div>
 						</div>
 					</div>

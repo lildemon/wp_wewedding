@@ -30,42 +30,21 @@
 				</div>
 				<div class="mod no-bor">
 					<h3>客户服务中心联系方式</h3> 
-					<span>免费服务热线：<ins>400-400-4000</ins></span>
-					<span>免费服务邮箱：4546456@sdf.com</span>
+					<span>免费服务热线：<ins>400-625-7188</ins></span>
+					<span>免费服务邮箱：we@we-inlove.com</span>
 					<span>服务时间：09:00-24:00</span>
 				</div>
 			</div>
 			<div class="web-right">
-				COPYRIGHT 2007~2016 LOVES ALL RIGHTS RESERVED 粤IPC备09004511 增值电信业务经营许可证 粤B2-20090145
+				COPYRIGHT 2007~2016 LOVES ALL RIGHTS RESERVED, 唯一珠宝有限公司, 闽ICP备16013151号-1 增值电信业务经营许可证 粤B2-20090145
 			</div>
 			<ul class="links">
 				<li>友情链接：</li>
 				<li>
-					<a href="">拉手网</a>
+					<a href="http://www.cngold.org.cn">中国黄金协会</a>
 				</li>
 				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
-				</li>
-				<li>
-					<a href="">拉手网</a>
+					<a href="http://platinumjewelry.com">国际铂金协会</a>
 				</li>
 			</ul>
 		</div>

@@ -25,11 +25,35 @@
 				<div class="box hot">
 					<h3>热点推荐</h3>
 					<div class="link">
-						<a href="#"><span>1.</span>WE福清店盛大开幕</a>
-						<a href="#"><span>2.</span>WE福清店盛大开幕</a>
-						<a href="#"><span>3.</span>WE福清店盛大开幕</a>
-						<a href="#"><span>4.</span>WE福清店盛大开幕</a>
-						<a href="#"><span>5.</span>WE福清店盛大开幕</a>
+						<?php
+									$cats = wp_get_post_categories($post->ID);
+								if ($cats) {
+									$cat = get_category( $cats[0] );
+									$first_cat = $cat->category_parent;
+									$cat = get_category($first_cat);
+									$first_cat = $cat->category_parent;
+
+									$args = array(
+										'category__in' => array(20, 21, 22, 23, 24),
+										'showposts' => 6,
+										'post_type' => 'post',
+										'orderby' => 'rand',
+										'ignore_sticky_posts' => true);
+
+									query_posts($args);
+									$sug_idx = 1;
+									
+								if (have_posts()) : ?>
+									<?php while (have_posts()) : the_post(); update_post_caches($posts); ?>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute();
+										?>">
+											<?php echo $sug_idx; ?>、<?php the_title(); ?>
+										</a>
+										<?php $sug_idx++; ?>
+									<?php endwhile; ?>
+									<?php else : ?>
+										<a href="#">* 暂无相关文章</a>
+								<?php endif; wp_reset_query(); } ?>
 					</div>
 				</div>
 			</div>
