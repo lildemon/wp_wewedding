@@ -88,7 +88,7 @@ Template Name: 预约页面2
 											</div>
 										</td>
 										<td>
-											<div class="check-box on" >
+											<div class="check-box" >
 												<a href="javascript:;"></a>
 												<span>茶</span>
 											</div>
@@ -111,7 +111,7 @@ Template Name: 预约页面2
 								<table ref="productReqSelect" name="ccf_field_product-requirement[]">
 									<tr>
 										<td>
-											<div class="check-box on" >
+											<div class="check-box" >
 												<a href="javascript:;"></a>
 												<span>结婚钻戒</span>
 											</div>
@@ -238,7 +238,7 @@ Template Name: 预约页面2
 											</div>
 										</td>
 										<td>
-											<div class="check-box on" >
+											<div class="check-box" >
 												<a href="javascript:;"></a>
 												<span>结婚</span>
 											</div>

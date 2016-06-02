@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 经典案例-1
+Template Name: 经典案例-7
 */
 ?>
 
@@ -16,14 +16,16 @@ Template Name: 经典案例-1
 				<span>您的位置：</span>
 				<a href="/">WE </a> &gt;
 				<a href="/archives/category/cases">经典案例 </a> &gt;
-				<a href="javascript:;">爱心纸条系列 </a>
+				<a href="javascript:;">灯塔系列 </a>
 			</div>
 
 			<div>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/1/Love-letter_01.jpg" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/1/Love-letter_02.jpg" alt="">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/1/Love-letter_03.jpg" alt="">
-			</div>
+
+
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/7/sy_01.jpg" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/7/sy_02.jpg" alt="">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/7/sy_03.jpg" alt="">
+		</div>
 			
 
 		</div>

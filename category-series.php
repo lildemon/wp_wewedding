@@ -142,12 +142,12 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 					</ul>
 				</div>
 
-				<!-- <div class="goods-list-box">
-					<img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/goods_list/banner_6.jpg" alt="">
+				<div class="goods-list-box">
+					<img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/goods_list/banner_7.jpg" alt="">
 					<ul class="clearfix ac-box">
 						<?php 
 							$query = new WP_Query( array(
-								'category_name' => 'promise-series',
+								'category_name' => 'other-series',
 								'post_type' => 'wegoods'
 							));
 						?>
@@ -165,7 +165,7 @@ wp_enqueue_script('we_series', get_template_directory_uri() . '/dist/js/series.j
 						 <p>此系列暂无商品</p>
 						 <?php endif; ?>
 					</ul>
-				</div> -->
+				</div>
 
 			</div>
 		</div>

@@ -17,16 +17,37 @@
 			<a href="javascript:;">经典案例 </a>
 		</div>
 		<div class="goods-list-box" style="margin-top:20px;">
-			<a href="/classic_1"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/banner4.jpg" alt=""></a>
+			<a href="/classic_1"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/1/1banner-LoveLetter.jpg" alt=""></a>
 		</div>
 
 		<div class="goods-list-box" style="margin-top:20px;">
-			<a href="javascript:;"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/banner2.jpg" alt=""></a>
+			<a href="/classic_2"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/2/2banner-cn.jpg" alt=""></a>
 		</div>
 
 		<div class="goods-list-box" style="margin-top:20px;">
-			<a href="javascript:;"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/banner1.jpg" alt=""></a>
+			<a href="/classic_3"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/3/3banner-yh.jpg" alt=""></a>
 		</div>
+
+		<div class="goods-list-box" style="margin-top:20px;">
+			<a href="/classic_4"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/4/4banner-yl.jpg" alt=""></a>
+		</div>
+
+		<div class="goods-list-box" style="margin-top:20px;">
+			<a href="/classic_5"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/5/5banner-xl.jpg" alt=""></a>
+		</div>
+
+		<div class="goods-list-box" style="margin-top:20px;">
+			<a href="/classic_6"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/6/6banner-na.jpg" alt=""></a>
+		</div>
+
+		<div class="goods-list-box" style="margin-top:20px;">
+			<a href="/classic_7"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/7/7banner-sy.jpg" alt=""></a>
+		</div>
+
+		<div class="goods-list-box" style="margin-top:20px;">
+			<a href="/classic_8"><img class="ac-img" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/classic/8/8banner-rainbow.jpg" alt=""></a>
+		</div>
+
 	</div>
 </div>
 

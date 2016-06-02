@@ -29,6 +29,7 @@
 							'type'                     => 'wegoods',
 							'child_of'                 => $category->term_id,
 							'order'                    => 'ASC',
+							'orderby' 				   => 'term_id',
 							'hide_empty'               => FALSE,
 							'hierarchical'             => 1,
 							'taxonomy'                 => 'category',
