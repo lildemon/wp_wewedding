@@ -35,7 +35,7 @@ Template Name: 设计团队
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/classic.jpg" alt="">
 				</div>
 
-				<div class="designer ani-show">
+				<!-- <div class="designer ani-show">
 					<img class="ani-delay-l" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/designer1.jpg" alt="">
 					<div class="msg-box ani-delay-r">
 						<div>
@@ -46,25 +46,17 @@ Template Name: 设计团队
 							<p>她让珠宝成为了身体的第二张名片。</p>
 						</div>
 					</div>
+				</div> -->
+
+				<div class="ani-show">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/sg.jpg" alt="">
 				</div>
 
-				<div class="designer ani-show">
-					<img class="ani-delay-l" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/designer2.jpg" alt="">
-					<div class="msg-box ani-delay-r">
-						<div>
-							<h3>Efva Attling</h3>
-							<p> 德国国际珠宝设计师 </p>
-							<p>崇尚极简主义，擅长以细节激发整体的美感 </p>
-							<p>他的作品无不透露出干练，自信的特质。</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="de-story ani-show">
+				<!-- <div class="de-story ani-show">
 					<h3>饱含文艺情怀的钻戒</h3>
 					<div class="clearfix">
 						<div class="img-box">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/design/good.jpg" alt="">
+							<img src="images/design/good.jpg" alt="">
 						</div>
 						<div class="txt-box">
 							<p>设计灵感</p>
@@ -73,7 +65,7 @@ Template Name: 设计团队
 							<a href="#" class="btn-or">了解更多WE的品牌故事</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</div>

@@ -77,7 +77,7 @@ Template Name: 品质工艺
 				</div>
 
 				<div class="title-5c ani-show">
-					WE钻石的5C标准 源于对于品质近乎苛刻的追求
+					WE钻石的4C标准 源于对于品质近乎苛刻的追求
 				</div>
 
 				<div class="intro-5c clearfix ani-show">

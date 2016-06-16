@@ -28,7 +28,7 @@ Template Name: 预约页面
 				?>
 
 				<form ref="submit_form">
-					<p>预约到店,尊享中国第一婚戒品牌高级定制服务：we为您提供个性定制、探店体验、保养维护和礼品兑换等服务，选择您需要的服务预约到线下定制中心，即可享受预约尊享服务。</p>
+					<p>预约到店,尊享中国第一婚戒品牌高级定制服务：WE为您提供个性定制、探店体验、保养维护和礼品兑换等服务，选择您需要的服务预约到线下定制中心，即可享受预约尊享服务。</p>
 					
 					<input class="choose-time" id="textymdhms" type="text" placeholder="选择到店时间" value="" ref="timeInput" readonly>
 

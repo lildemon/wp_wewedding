@@ -8,7 +8,7 @@
 	<dl>
 		<dd>售后服务</dd>
 		<dt><a href="/regist">注册协议</a></dt>
-		<dt><a href="/statement">隐私说明</a></dt>
+		<dt><a href="/statement">隐私声明</a></dt>
 		<dt><a href="/return">退换流程</a></dt>
 		<dt><a href="/other">其他售后</a></dt>
 	</dl>

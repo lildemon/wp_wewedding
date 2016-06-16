@@ -4,8 +4,7 @@
 <div class="main news-list pdt-200">
 	<div class="wrapper">
 		<div class="site">
-			<span>您的位置：</span>
-			<a href="/">首页 </a> &gt;
+			<?php we_breadcrumb() ?>
 		</div>
 		<?php get_template_part( 'sections/article-list' ); ?>
 		<h3 class="title">更多推荐</h3>

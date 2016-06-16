@@ -52,7 +52,7 @@ Template Name: 权威认证
 						<div class="check">
 							<p class="title-l">查询GIA钻石证书</p>
 							<p>									
-							如何网上查询GIA钻石证书，看懂查询结果呢？
+							如何网上查询GIA钻石证书？
 							您可以登陆GIA的官方网站进行查询<a href="http://www.gia.edu/reportcheck" target="_blank">http://www.gia.edu/reportcheck</a>
 							</p>
 

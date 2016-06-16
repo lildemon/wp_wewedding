@@ -57,7 +57,7 @@ Template Name: 产品百科
 							</div>
 						</div>
 
-						<p class="title">拥有“5C”的WE钻石</p>
+						<p class="title">拥有“4C”的WE钻石</p>
 						<p class="c-5">20世纪中期，美国宝石研究院GIA创立了业内公认的钻石分级标准“4C”（颜色Colour、净度Clarity、切工Cut和克拉Carat)。 时至今日，“4C”已经成为最权威的钻石质量认证标准。WE严格遵守国际通用的4C钻石评定标准。在此基础上精益求精的WE制定出更为严格的“5C”钻石审核机制。</p>
 						<a href="/quality" class="btn-bor">了解更多WE的品质&gt;工艺</a>
 						<h3 class="text-mid">怎么挑选对戒</h3>

@@ -16,7 +16,7 @@ Template Name: 经典案例-3
 				<span>您的位置：</span>
 				<a href="/">WE </a> &gt;
 				<a href="/archives/category/cases">经典案例 </a> &gt;
-				<a href="javascript:;">时间沙漏系列 </a>
+				<a href="javascript:;">时光沙漏系列 </a>
 			</div>
 
 			<div>

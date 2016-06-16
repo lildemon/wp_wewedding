@@ -12,7 +12,7 @@
 				<div class="mod">
 					<h3>售后服务</h3> 
 					<div><a href="/regist">注册协议</a></div> 
-					<div><a href="/statement">隐私说明</a></div> 
+					<div><a href="/statement">隐私声明</a></div> 
 					<div><a href="/return">退换流程</a></div> 
 					<div><a href="/other">其他售后</a></div>
 				</div>

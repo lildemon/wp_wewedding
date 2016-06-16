@@ -8,9 +8,9 @@
 			<dd><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/icon_phone.png" alt=""></dd>
 			<dt>400-625-7188</dt>
 		</dl>
-		<p>欢迎致电WE唯一钻石定制</p>
-		<p>珠宝顾问为您解答任何关于珠宝疑问</p>
-		<a href="tencent://message/?uin=2623232844&amp;Site=we-inlove.com&amp;Menu=yes" class="btn-or">联系在线客服</a>
+		<p>欢迎致电WE唯一咨询热线</p>
+		<p>定制顾问为您解答任何关于珠宝疑问</p>
+		<a href="tencent://message/?uin=3413921949&amp;Site=we-inlove.com&amp;Menu=yes" class="btn-or">联系在线客服</a>
 	</div>
 	<div>
 		<dl>

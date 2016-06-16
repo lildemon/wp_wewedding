@@ -13,7 +13,7 @@ Template Name: 隐私说明
 				<span>您的位置：</span>
 				<a href="/">首页 </a> &gt;
 				<a href="javascript:;">售后服务</a> &gt;
-				<a href="#">隐私说明</a>
+				<a href="#">隐私声明</a>
 			</div>
 			<div class="clearfix">
 				<?php get_template_part( 'sections/help-sidebar' ); ?>
